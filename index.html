@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GWITY — Education & Job Consultancy</title>
+  <meta name="description" content="GWITY helps students and professionals with admissions, career guidance, resumes, interview prep, and job placement.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <img src="gwity-logo.jpg" alt="GWITY logo" class="logo">
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>GWITY</h1>
+        <p class="tagline">Education & Job Consultancy — from admissions to offer letter.</p>
+        <form class="search" onsubmit="return GWITY.quickGuide(event)">
+          <input type="text" placeholder="What do you need help with? e.g., 'MS in CS USA', 'Java developer job'" aria-label="Need help with">
+          <button class="btn">Get Guide</button>
+        </form>
+        <div class="cta-row">
+          <a class="btn ghost" href="#services">See services</a>
+          <a class="btn" href="#contact">Book a free consult</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="card">
+          <h3>Admissions</h3>
+          <p>University shortlisting, SoP/LoR editing, scholarships.</p>
+        </div>
+        <div class="card">
+          <h3>Career</h3>
+          <p>Resume & LinkedIn revamp, interview prep, referrals.</p>
+        </div>
+        <div class="card">
+          <h3>Jobs</h3>
+          <p>Targeted job search, placement support, salary guidance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="container features">
+      <h2>What we do</h2>
+      <div class="grid">
+        <div class="feature">
+          <span class="num">01</span>
+          <h3>Profile Evaluation</h3>
+          <p>1:1 review of academics, projects, and goals to map best-fit universities or roles.</p>
+        </div>
+        <div class="feature">
+          <span class="num">02</span>
+          <h3>University Admissions</h3>
+          <p>Shortlists, SoP/LoR editing, application strategy, scholarships & assistantships.</p>
+        </div>
+        <div class="feature">
+          <span class="num">03</span>
+          <h3>Test & Visa Guidance</h3>
+          <p>GRE/IELTS/PTE plans, DS-160 & interview prep, documentation checklists.</p>
+        </div>
+        <div class="feature">
+          <span class="num">04</span>
+          <h3>Resume & LinkedIn</h3>
+          <p>ATS-optimized resume writing, portfolio reviews, recruiter messaging scripts.</p>
+        </div>
+        <div class="feature">
+          <span class="num">05</span>
+          <h3>Interview Prep</h3>
+          <p>Mock interviews for Software/Data/Cloud/Mechanical roles with feedback.</p>
+        </div>
+        <div class="feature">
+          <span class="num">06</span>
+          <h3>Job Placement</h3>
+          <p>Targeted job lists, weekly accountability, referral outreach and follow-ups.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="container about">
+      <div class="about-inner">
+        <img src="assets/gwity-logo.jpg" alt="GWITY wordmark">
+        <div>
+          <h2>Our process</h2>
+          <ol class="steps">
+            <li><strong>Free consult:</strong> understand goals, timelines, and constraints.</li>
+            <li><strong>Action plan:</strong> universities/roles list + collateral checklist.</li>
+            <li><strong>Execution:</strong> weekly sprints—applications, outreach, interviews.</li>
+            <li><strong>Offer & onboarding:</strong> negotiate offers; visa or joining support.</li>
+          </ol>
+          <p class="muted">Transparent pricing. Flexible monthly or package plans.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="container faq">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Do you guarantee admission or a job?</summary>
+        <p>No consultancy can ethically guarantee outcomes. We maximize your odds with strategy, quality materials, and disciplined execution.</p>
+      </details>
+      <details>
+        <summary>Which countries do you support?</summary>
+        <p>USA, Canada, UK, Germany, and Australia for study; global remote and on‑site roles for jobs.</p>
+      </details>
+      <details>
+        <summary>How do sessions work?</summary>
+        <p>Weekly 30–60 minute calls, with async support via email/WhatsApp. Shared trackers for tasks and deadlines.</p>
+      </details>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Book a free 15‑minute consultation. Replace the email/phone below with yours.</p>
+        <div class="contact-card">
+          <p><strong>Email:</strong> <a href="mailto:hello@gwity.example">hello@gwity.example</a></p>
+          <p><strong>Phone/WhatsApp:</strong> +1 (555) 000‑0000</p>
+        </div>
+        <form class="contact-form" onsubmit="return GWITY.sendMessage(event)">
+          <input name="name" type="text" placeholder="Your name" required>
+          <input name="email" type="email" placeholder="you@example.com" required>
+          <textarea name="message" rows="5" placeholder="Tell us your target course or role…" required></textarea>
+          <button class="btn">Send</button>
+          <p class="form-note">This demo form opens your email client. Change it in <code>script.js</code> to use any form backend.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© <span id="year"></span> GWITY</span>
+      <span>Education & Job Consultancy</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
